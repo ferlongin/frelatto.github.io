@@ -1,0 +1,532 @@
+:root{
+    --color-primary: #000;
+    --color-title: #000;
+    --align-title: left;
+    --padding-container: 100px 0;
+    --width-container: 90%;
+    --max-width-container: 1200px;
+    --color-btn: #fff0d6;
+    --text-btn: #fff;
+    --padding-btn: 20px 35px;
+    --height-shape:18em;
+}
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff0d6;
+    opacity: 1;
+    background-size: 28px 28px;
+    background-position: 0 0,14px 14px;
+}
+
+.container{
+    width: 90%;
+    max-width: var(--max-width-container);
+    padding: var(--padding-container);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 3%;
+    background-color: #ffd6ee;
+}
+
+.header__nav {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__nav a, .header__contacto, .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+  
+.header__nav li {
+    padding: 0px 20px;
+}
+  
+.header__nav li a:hover {
+    color: #000;
+    font-weight: bold;
+}
+  
+.header__contacto {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #fff0d6;
+    border: none;
+    cursor: pointer;
+}
+  
+.header__contacto:hover {
+    background-color: #918484;
+    font-weight: bold;
+}
+
+/* MENU CELULAR */
+.menu {
+    display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #ffd6ee;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ffd6ee;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* FRELATTO */
+.frelatto{
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+    --padding-container: 0;
+}
+
+.frelatto__container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 2fr;
+    place-items: center;
+    gap: 20px;
+}
+
+.frelatto__title{
+    font-size: 4rem;
+}
+
+.frelatto__copy{
+    font-size: 1.2rem;
+    margin: 25px 0;
+}
+
+.frelatto__img{
+    width: 95%;
+}
+
+/* MAIN */
+.main{
+    background: #fff;
+}
+
+.title{
+    font-size: 2.5rem;
+    text-align: var(--align-title);
+    color: var(--color-title);
+}
+
+.title--border::after{
+    content: "";
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    height: 4px;
+    background-color:  rgb(255, 214, 238);
+}
+
+/* MAIN INDEX */
+.main__index{
+    text-align: center;
+    --padding-container: 100px 0 100px;
+}
+
+.main__index__container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main__index__nombre{
+    margin: 30px 0;
+}
+
+.main__index__tag{
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.main__index__parrafo{
+    line-height: 1.5;
+}
+
+.main__index__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* MAIN HISTORIA */
+.main__historia{
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    place-items: center;
+    width: 80%;
+    border-bottom: 6.25% solid #ccc;
+}
+
+.main__historia__parrafo{
+    margin: 20px 0px;
+    margin-right: 50px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: large;
+}
+
+.main__pantalla{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    width: 90%;
+    padding-top: 10px;
+}
+
+.izquierda__img{
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.derecha{
+    background: rgb(255, 214, 238);
+    width: 100%;
+}
+
+.tradicion{
+    color: #fff;
+}
+
+.main__pantalla__h1{
+    font-size: 375%;
+    width: 50%;
+    margin: 10px;
+}
+
+.main__historia__p{
+    font-size: 100%;
+    line-height: 30px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+/* PRODUCTOS */
+.contenedor_galeria{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.galeria__margin{
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* SUCURSALES */
+.sucursales__mapa{
+    width: 100%;
+    height: 500px;
+}
+
+/* CONTACTO */
+.formulario{
+    border-bottom: 1px solid #000;
+}
+
+.contact-box{
+	display: grid;
+	grid-template-columns: 5fr 5fr;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+}
+
+.left__img{
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+.formulario__h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+.formulario__h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #ffd6ee;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #ffd6ee;
+	color: #000;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+    padding: 10px 0 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer__contacto{
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.footer__social{
+    display: flex;
+    margin-top: 10px;
+    flex:row;
+    position: relative;
+}
+
+.footer__link{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ALINEAR CON REDES
+.footer__form{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.footer__h2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.footer__submit{
+    margin-left: 10px;
+    display: flex;
+    height: 50px;
+    padding: 0 20px ;
+    background-color: rgb(255, 214, 238);
+    border: solid 1px #000;
+    font-size: 1rem;
+    color: #000;
+    cursor: pointer;
+    border-radius: 3px;
+}
+*/
+
+.footer__copyright{
+    padding-top: 30px;
+    border-top: 2px solid #918484;
+    text-align: left;
+}
+
+
+@media (max-width:1000px){
+    :root{
+        --height-shape:14em;
+    }
+
+    /* frelatto */
+    .frelatto{
+       /* min-height: 100vh; */
+        height: auto;
+    }
+
+    .frelatto__container{
+        --padding-container: 60px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+    }
+
+    .frelatto__img{
+        order: -1;
+        max-width: 300px;
+    }
+
+    .frelatto__title{
+        font-size: 3.8rem;
+    }
+
+    .izquierda__img{
+        height: auto;
+    }
+
+    /* main__historia */
+    .main__historia {
+        grid-template-columns: auto;
+    }
+
+    .main__pantalla{
+        grid-template-columns: auto;
+    }
+
+    .contenedor_galeria{
+        grid-template-columns: auto;
+    }
+
+    /* CONTACTO */
+    .contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: auto;
+        width: auto;
+	}
+    .left__img{
+        padding-left: 0%;
+    }
+
+    /* MENU MOVIL */
+    .header__nav,
+    .header__contacto {
+        display: none;
+    }
+    .menu {
+        display: initial;
+    }
+}
+
+@media (max-width: 500px){
+    :root{
+        --padding-btn: 20px 0;
+    }
+
+    /* frelatto */
+
+    .frelatto__container{
+        --padding-container: 25px 0;
+    }
+
+    .frelatto__texts{
+        text-align: center;
+    }
+
+    .frelatto__title{
+        font-size: 3rem;
+    }
+
+    /* main__index */
+
+    .main__index{
+        --padding-container: 60px 0;
+    }
+
+    .main__index__container{
+        width: 90%;
+    }
+
+    /* MENU MOVIL */
+    .overlay a {
+        font-size: 20px;
+      }
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

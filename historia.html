@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frelatto</title>
+    <link rel="shortcut icon" href="imagenes/ice-cream-cone-rosa.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                <ul class="header__nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="productos.html">Gustos</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                </ul>
+            </nav>
+            <a class="header__contacto" href="formulario.html">Contacto</a>
+            <p class="menu header__contacto">Menu</p>
+        </section>
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="index.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="productos.html">Gustos</a>
+                <a href="sucursales.html">Sucursales</a>
+                <a href="formulario.html">Contacto</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="mobile.js"></script>
+    </header>
+    <main class="main">
+        <section class="main__historia container">
+            <div>
+                <h2 class="title title--border">1952</h2>
+                <p class="main__historia__parrafo">Año en el que los Frelatto llegaron a la Argentina, con tan solo un bolso de mano y la esperanza de una vida mejor para su familia. </p>
+                <p class="main__historia__parrafo">Los Frelatto eran dueños de una pequeña heladería de barrio en Senise, al Sur de Italia. Durante la segunda guerra mundial su negocio se vio forzado a cerrar, y con la gran crisis que desencadenó esta, los Frelatto decidieron emigrar a la Argentina, en el barco “Conte Grande”. Fue así como llegaron a la Argentina, con el sueño de poder reabrir su pequeña heladería de barrio, pero esta vez en su nuevo hogar, Argentina. </p>
+            </div>
+    
+            <figure class="main__historia__imagen">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="imagenes/WhatsApp Image 2022-04-30 at 9.02.54 PM.jpeg" class="d-block w-100" alt="Barco en el que los Frelatto llegaron a la Argentina">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/two-happy-women-holding-ice-cream-amusement-park.jpg" class="d-block w-100" alt="Barco en el que los Frelatto llegaron a la Argentina">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/grandma-feeding-boy-with-ice-cream.jpg" class="d-block w-100" alt="Barco en el que los Frelatto llegaron a la Argentina">
+                    </div>
+                    </div>
+                  </div>
+            </figure>
+        </section>
+        <section class="main__pantalla container">
+            <div class="izquierda">
+                <img src="imagenes/ConoHelado2.jpg" class="izquierda__img" alt="Cono Helado">
+            </div>
+            <div class="derecha">
+                <h1 class="main__pantalla__h1"><span class="tradicion">NOSTALGIA</span> FAMILIA</h1>
+                <p class="main__historia__p">El 28 de abril de 1959, con mucho esfuerzo de por medio, inauguraron su primer local en la zona de Adrogué. Rápidamente ganó atractivo gracias a la calidez que se reflejaba tanto en su heladería, como en los valores que compartían, ganándose así el corazón de toda la comunidad. </p>
+                <p class="main__historia__p">Hoy en día, Frelatto cuenta con 8 sucursales por todo Buenos Aires, Argentina. Tres de ellas en Adrogué, dos en Banfield y una en las localidades de Lomas de Zamora, Temperley, y Palermo respectivamente. Cada negocio es exactamente igual a los otros, ya que se busca replicar el mismo sentimiento de familia que aquel en Senise previo a la guerra.  </p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer container">
+        <div class="footer__container">
+            <h3 class="footer__contacto">Seguinos en nuestras redes sociales y enterate de novedades exclusivas!</h3>
+            <section class="footer__social">
+                <img class="footer__link" src="imagenes/facebook-social-logo.png" alt="Facebook" class="footer__icon">
+                <img class="footer__link" src="imagenes/instagram.png" alt="Instagram" class="footer__icon">
+                <img class="footer__link" src="imagenes/twitter.png" alt="twitter" class="footer__icon">
+            </section>
+            <p class="footer__copyright">
+                2022 Frelatto&copy; - Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
