@@ -519,6 +519,10 @@ textarea{
     .main__index__container{
         width: 90%;
     }
+	
+    .main__pantalla__h1{
+	margin: none;
+    }
 
     /* MENU MOVIL */
     .overlay a {
