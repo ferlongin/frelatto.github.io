@@ -521,7 +521,7 @@ textarea{
     }
 	
     .main__pantalla__h1{
-	margin: none;
+	margin: 0px;
     }
 
     /* MENU MOVIL */
