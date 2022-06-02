@@ -13,7 +13,7 @@ function validarFormulario()
     var nombre = document.getElementById("nombre");
     if(nombre.value == "")
     {
-      alert("El nombre y apellido son un campo obligatorio");
+      alert("El nombre y apellido es un campo obligatorio");
     }
 
     var nombre = document.getElementById("email");
