@@ -513,6 +513,10 @@ textarea{
     .main__pantalla__h1{
 	font-size: 300%;
     }
+	
+    .textArea{
+        columns: 10;
+    }
 
     /* MENU MOVIL */
     .overlay a {
