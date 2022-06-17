@@ -514,10 +514,6 @@ textarea{
 	font-size: 300%;
     }
 	
-    .textarea{
-        columns: 35;
-    }
-
     /* MENU MOVIL */
     .overlay a {
         font-size: 20px;
