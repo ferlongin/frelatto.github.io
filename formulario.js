@@ -27,8 +27,11 @@ function validarFormulario()
     {
       alert("El teléfono es un campo obligatorio");
     }
-
-    return;
+    
+    else {
+        alert("El formulario se ha enviado con éxito")
+    }
+    
     var formulario = document.getElementById("respuesta");
     formulario.submit();
 }
