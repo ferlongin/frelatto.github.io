@@ -151,6 +151,7 @@ function calcularTotal() {
  * Vacia el carrito y vuelve a dibujarlo
  */
 function vaciarCarrito() {
+    alert("La compra se ha realizado con éxito")
     // Limpiamos los productos guardados
     carrito = [];
     // Renderizamos los cambios
