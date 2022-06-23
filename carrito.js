@@ -151,7 +151,12 @@ function calcularTotal() {
  * Vacia el carrito y vuelve a dibujarlo
  */
 function vaciarCarrito() {
+    if(carrito.length != 0 ){
     alert("La compra se ha realizado con éxito")
+    }
+    else{
+        alert("No hay elementos en el carrito")
+    }
     // Limpiamos los productos guardados
     carrito = [];
     // Renderizamos los cambios
